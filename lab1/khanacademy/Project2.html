@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Project: Recipe Book</title>
+
+  <style>
+    body {
+      background-color: lightgray;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkgreen;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .details {
+      background-color: white;
+      padding: 10px;
+      width: 320px;
+    }
+
+    table {
+      background-color: white;
+      border-collapse: collapse;
+      margin-top: 10px;
+      width: 320px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 6px;
+      text-align: left;
+    }
+
+    .steps {
+      background-color: white;
+      padding: 10px;
+      width: 320px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My Recipe Book</h1>
+
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#pasta">Creamy Pasta</a></li>
+    <li><a href="#salad">Greek Salad</a></li>
+  </ol>
+
+  <h2 id="pasta">Creamy Pasta</h2>
+
+  <ul class="details">
+    <li>Time: 20 minutes</li>
+    <li>Serves: 2 people</li>
+  </ul>
+
+  <table>
+    <tr>
+      <th>Ingredient</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Pasta</td>
+      <td>200 g</td>
+    </tr>
+    <tr>
+      <td>Cream</td>
+      <td>150 ml</td>
+    </tr>
+    <tr>
+      <td>Cheese</td>
+      <td>50 g</td>
+    </tr>
+    <tr>
+      <td>Salt</td>
+      <td>To taste</td>
+    </tr>
+  </table>
+
+  <div class="steps">
+    <p><strong>Steps:</strong></p>
+    <p>1. Boil pasta in salted water.</p>
+    <p>2. Warm cream in a pan, add cheese.</p>
+    <p>3. Mix pasta with sauce and serve.</p>
+  </div>
+
+  <p>
+    Source:
+    <a href="https://en.wikipedia.org/wiki/Pasta">Wikipedia</a>
+  </p>
+
+  <h2 id="salad">Greek Salad</h2>
+
+  <ul class="details">
+    <li>Time: 10 minutes</li>
+    <li>Serves: 2 people</li>
+  </ul>
+
+  <table>
+    <tr>
+      <th>Ingredient</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Tomatoes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Cucumber</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Feta cheese</td>
+      <td>80 g</td>
+    </tr>
+    <tr>
+      <td>Olives</td>
+      <td>10</td>
+    </tr>
+  </table>
+
+  <div class="steps">
+    <p><strong>Steps:</strong></p>
+    <p>1. Chop tomatoes and cucumber.</p>
+    <p>2. Add feta and olives.</p>
+    <p>3. Mix and enjoy.</p>
+  </div>
+
+  <p>
+    Source:
+    <a href="https://en.wikipedia.org/wiki/Greek_salad">Wikipedia</a>
+  </p>
+
+</body>
+</html>
