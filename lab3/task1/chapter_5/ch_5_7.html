@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  //Task1
+  function unique(arr) {
+    return Array.from(new Set(arr));
+  }
+
+  //Task2
+  function aclean(arr) {
+    let obj = {};
+
+    for (let i = 0; i < arr.length; i++) {
+      let sorted = arr[i].toLowerCase().split("").sort().join("");
+      obj[sorted] = arr[i];
+    }
+
+    return Object.values(obj);
+  }
+
+  arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+  alert( aclean(arr) );
+  //Task3
+  let map = new Map();
+
+  map.set("name", "John");
+
+  let keys = Array.from(map.keys());
+
+  keys.push("more");
+
+  alert(keys);
+
+
+</script>
+</body>
+</html>

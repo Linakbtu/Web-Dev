@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  //Task1
+  function checkAge(age) {
+    if (age > 18) {
+      return true;
+    } else {
+      // ...
+      return confirm('Did parents allow you?');
+    }// Else is not required
+  }
+
+  //Task2
+  function checkAge(age) {
+    return (age > 18) ? true : 'Did parents allow you?'
+  }
+
+  function checkAge(age) {
+    return (age > 18) || confirm('Did parents allow you?')
+  }
+
+  //Task3
+  function min(a,b){
+    return (a < b) ? a : b;
+  }
+
+  //Task4
+  function pow(x, y){
+    return x ** y;
+  }
+
+  let x = +prompt("x:", "");
+  let y = +prompt("y:", "");
+
+  alert(pow(x,y));
+</script>
+</body>
+</html>

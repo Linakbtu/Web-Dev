@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //Task1
+    alert( null || 2 || undefined ); //2
+
+    //Task2
+    alert( alert(1) || 2 || alert(3) );// 1 2
+
+    //Task3
+    alert( 1 && null && 2 ); // null
+
+    //Task4
+    alert( alert(1) && alert(2) ); // 1 undefined
+
+    //Task5
+    alert( null || 2 && 3 || 4 ); // 3
+
+    //Task 6
+    let age;
+    if(age >= 14 && age <= 90){}
+
+    //Task 7
+    if(!(age >= 14 && age <=90)){}
+    if(age < 14 || age > 90 ){}
+
+    //Task 8
+    if (-1 || 0) alert( 'first' ); // true
+    if (-1 && 0) alert( 'second' ); // false
+    if (null || -1 && 1) alert( 'third' ); // true
+
+    //Task 9
+    let visitor = prompt("Who's there?", '');
+    if(visitor === '' || visitor === null) {
+        alert('Canceled');
+    }
+    else if(visitor !== "Admin"){
+        alert("I don't know you")
+    }
+    else{
+        let password = prompt("Password?", '');
+        if(password === "TheMaster") {
+            alert("Welcome!");
+        }
+        else if(password === '' || password === null) {
+            alert("Canceled");
+        }
+        else {
+            alert("Wrong password");
+        }
+    }
+</script>
+</body>
+</html>

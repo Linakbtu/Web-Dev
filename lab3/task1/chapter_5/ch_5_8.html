@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  //Task1
+  let messages = [
+    {text: "Hello", from: "John"},
+    {text: "How goes?", from: "John"},
+    {text: "See you soon", from: "Alice"}
+  ];
+
+  let readMessages = new WeakSet();
+
+  // two messages have been read
+  readMessages.add(messages[0]);
+  readMessages.add(messages[1]);
+
+  readMessages.add(messages[0]);
+
+  alert("Read message 0: " + readMessages.has(messages[0]));
+
+  messages.shift();
+
+  //Task2
+  messages = [
+    {text: "Hello", from: "John"},
+    {text: "How goes?", from: "John"},
+    {text: "See you soon", from: "Alice"}
+  ];
+
+  let readMap = new WeakMap();
+
+  readMap.set(messages[0], new Date(2017, 1, 1));
+
+
+</script>
+</body>
+</html>
