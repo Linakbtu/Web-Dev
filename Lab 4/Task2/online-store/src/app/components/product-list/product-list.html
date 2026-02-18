@@ -1,0 +1,13 @@
+<div class="product-list-container">
+  <header class="header">
+    <h1>Online Store</h1>
+    <p class="subtitle">Browse our selection of premium products</p>
+  </header>
+
+  <div class="product-grid">
+    <app-product-card 
+      *ngFor="let product of products" 
+      [product]="product">
+    </app-product-card>
+  </div>
+</div>
