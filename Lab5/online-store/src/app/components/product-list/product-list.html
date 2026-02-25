@@ -1,0 +1,17 @@
+<div class="product-list-container">
+  <header class="header">
+    <h1>Online Store</h1>
+    <p class="subtitle">Browse our selection of premium products</p>
+  </header>
+
+  <div class="product-grid">
+    @if(displayedProducts().length === 0){
+      <p>No products in this category</p>
+    } @else {
+      @for (product of displayedProducts(); track product.id) {
+        <app-product-item [product] = "product" 
+          (deleteProduct) = "onProductDeleted($event)" />
+      }
+    }
+  </div>
+</div>

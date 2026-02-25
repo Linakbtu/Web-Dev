@@ -1,0 +1,17 @@
+<div class="categories">
+  @for (category of categories; track category.id) {
+    <button 
+      class="category-btn"
+      [class.active]="selectedCategoryId === category.id"
+      (click)="selectCategory(category.id)">
+      {{ category.name }}
+    </button>
+  }
+</div>
+
+@if (selectedCategoryId === null) {
+  <p class="welcome">👋 Welcome! Select a category to browse products</p>
+} @else {
+  <app-product-list [products]="getSelectedProducts()"></app-product-list>
+}
+<router-outlet />

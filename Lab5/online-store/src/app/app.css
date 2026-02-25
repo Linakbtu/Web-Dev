@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.categories {
+  display: flex;
+  gap: 12px;
+  padding: 20px 24px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 10px 24px;
+  border: 2px solid #667eea;
+  border-radius: 25px;
+  background: transparent;
+  color: #667eea;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-btn:hover {
+  background: #667eea;
+  color: white;
+}
+
+.category-btn.active {
+  background: #667eea;
+  color: white;
+}
+
+.welcome {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 24px;
+  color: #888;
+}
