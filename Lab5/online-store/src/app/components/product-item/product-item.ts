@@ -9,6 +9,7 @@ import { Product } from '../../models/product.model';
 })
 export class ProductItem {
   product = input.required<Product>();
+  quickView= output<Product>();
 
   deleteProduct = output<number>();
 
@@ -26,6 +27,9 @@ export class ProductItem {
     if (confirmed) {
       this.deleteProduct.emit(this.product().id);
     }
+  }
+  onQuickView() {
+    this.quickView.emit(this.product());
   }
 
 
@@ -52,3 +56,4 @@ export class ProductItem {
     window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
   }
 }
+

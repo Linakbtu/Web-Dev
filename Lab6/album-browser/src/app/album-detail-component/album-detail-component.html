@@ -1,0 +1,22 @@
+@if(isLoading) {
+  <p class="loading">Loading...</p>
+} @else {
+  @if(album) {
+    <div class="detail-container">
+      <div class="detail-meta">
+        <span class="badge">Album #{{album.id}}</span>
+        <span class="badge">User {{album.userId}}</span>
+      </div>
+      <h1 class="detail-title">{{album.title}}</h1>
+      <div class="edit-section">
+        <label>Edit Title</label>
+        <input type="text" [(ngModel)]="updatedTitle" />
+        <button class="btn-save" (click)="onSave()">Save</button>
+      </div>
+      <div class="actions">
+        <a class="btn-secondary" [routerLink]="['/albums', album.id, 'photos']">View Photos</a>
+        <a class="btn-secondary" routerLink="/albums">← Back</a>
+      </div>
+    </div>
+  }
+}

@@ -28,17 +28,20 @@
         <div class="price">{{ product().price.toLocaleString() }} ₸</div>
 
         <div class="rating-buttons">
-            <button class ="btn-like" (click) = "onLike()" [class.liked]="liked()"> 
+            <button class ="btn-like" (click) = "onLike()" [class.liked]="liked()">
                 ❤️ {{ likes() }}
             </button>
 
             <button class = "btn-delete" (click) = "onDelete()"> 🗑️ Delete </button>
         </div>
         <div class="actions">
+          <button class="btn btn-quickview" (click)="onQuickView()">
+            👁 Quick View
+          </button>
             <a [href]="product().link" target="_blank" class="btn btn-primary">
                 View on Kaspi
             </a>
-      
+
             <div class="share-buttons">
                 <button (click)="shareOnWhatsApp()" class="btn btn-share whatsapp" title="Share on WhatsApp">
                 <span>WhatsApp</span>

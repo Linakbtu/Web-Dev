@@ -1,0 +1,14 @@
+@if(isLoading) {
+  <p class="loading">Loading...</p>
+} @else {
+  <div class="albums-container">
+    <h2>All Albums</h2>
+    @for(album of albums; track album.id) {
+      <div class="album-item" [routerLink]="['/albums', album.id]">
+        <span class="album-id">#{{album.id}}</span>
+        <span class="album-title">{{album.title}}</span>
+        <button class="btn-delete" (click)="onDelete(album.id, $event)">Delete</button>
+      </div>
+    }
+  </div>
+}

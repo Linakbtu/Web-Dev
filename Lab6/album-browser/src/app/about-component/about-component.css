@@ -1,0 +1,18 @@
+.info {
+  max-width: 480px;
+  margin: 100px auto;
+  padding: 0 24px;
+}
+
+.info h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.info p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}

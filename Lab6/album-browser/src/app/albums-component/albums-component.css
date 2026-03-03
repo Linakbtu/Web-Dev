@@ -1,0 +1,68 @@
+.albums-container {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.albums-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.3px;
+}
+
+.album-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.album-item:hover {
+  border-color: #3b6ef5;
+  box-shadow: 0 2px 8px rgba(59, 110, 245, 0.1);
+}
+
+.album-id {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  min-width: 36px;
+}
+
+.album-title {
+  flex: 1;
+  padding: 0 14px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.btn-delete {
+  background: none;
+  border: 1px solid #e8e8e8;
+  color: #999;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all 0.15s;
+}
+
+.btn-delete:hover {
+  border-color: #f55;
+  color: #f55;
+  background: #fff5f5;
+}
+
+.loading {
+  text-align: center;
+  padding: 80px;
+  color: #aaa;
+  font-size: 14px;
+}

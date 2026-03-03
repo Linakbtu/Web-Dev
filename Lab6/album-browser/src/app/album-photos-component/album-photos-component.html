@@ -1,0 +1,18 @@
+@if(isLoading) {
+  <p class="loading">Loading...</p>
+} @else {
+  <div class="photos-container">
+    <div class="photos-header">
+      <a class="btn-back" [routerLink]="['/albums', id]">← Back</a>
+      <h2>Photos</h2>
+    </div>
+    <div class="photos-grid">
+      @for(photo of photos; track photo.id) {
+        <div class="photo-card">
+          <img [src]="photo.thumbnailUrl" [alt]="photo.title">
+          <p>{{photo.title}}</p>
+        </div>
+      }
+    </div>
+  </div>
+}
